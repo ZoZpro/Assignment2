@@ -1,0 +1,125 @@
+<html>
+    <head>
+        
+        
+    </head>
+    <body>
+        <!-- the form tag is applied to the whole body of the registration page  -->
+        <form >
+            <fieldset style=" background-color: red; "><br><br>
+                <legend style="background-color: #6C9BCF;">
+                Personal Data
+                </legend>
+               
+            </feildset>
+       <!-- this form contains the first and second names information using the fieldset tag where the legend attribute is nested in it   -->
+            <form>
+                <fieldset style="background-color: #EBB02D;">
+                    <legend style="background-color: #6C9BCF;"><br><br>Your Name <br><br><br></legend>
+                    <br><br><br>
+                <table >
+                    <tr>
+                      
+                        <td>
+                            <label for="userFirstName">First Name</label>
+                        </td>
+                        <td>:</td>
+                        <td>
+                            <input type="text" name="userFirstName" id="userFirstName" placeholder="Ex Ziad"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="userSecondName">Second Name</label>
+                        </td> 
+                        <td>:</td>
+                        <td>
+                            <input type="text" name="userSecondName" id="userSecondName" placeholder="Ex Abdullah">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            </form>
+            <br><br>
+              
+                <table style="font-weight: bold;">
+                    <tr>
+                        <td><label for="userPhone">Your Phone </label> </td>
+                        <td>:</td>
+                        <td><input type="number" name="userPhone" id="userPhone" placeholder="enter your phone  "><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="userEmail"> E-mail </label></td>
+                        <td>:</td>
+                        <td><input type="email" name="userEmail" id="userEmail" placeholder="enter your email" required><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="userPassword"> Password </label> </td>
+                        <td>:</td>
+                        <td><input type="password" name="userPassword" id="userPassword" placeholder="enter your pasword" required><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="userRePassword">re-password</label> </td>
+                        <td>:</td>
+                        <td><input type="password" name="userRePassword" id="userRePassword" placeholder="re-enter your password"><br></td>
+                    </tr>
+                </table>
+             <br><br>
+             <!-- Wrote the input tag first to make the checkbox appear before the gender and added the padding to separate it from the information box above -->
+                <table>
+                    <tr>
+                        <td>
+                            <input type="radio" name="gender" id="male" value="male">
+                        </td>
+                        <td>
+                            <label for="male">Male</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="gender" id="female" value="female">
+                        </td>
+                        <td>
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
+                </table>
+                <br><br>  
+                <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="status" id="student" value="student">
+                        </td>
+                        <td>
+                            <label for="student">Student</label>
+                        </td>
+                    </tr>
+                    <tr></tr>
+                        <td>
+                            <input type="checkbox" name="status" id="graduated" value="graduated">
+                        </td>
+                        <td>
+                            <label for="graduated">Graduated</label> 
+                        </td>
+                    </tr>
+                </table>
+                <br><br>
+            <select name="OptionGroup" id="OptionGroup" style="width: 8%;margin-left: 8px;">
+                <optgroup label="Group 1">
+                    <option value="value1">Option 1.1</option>
+                </optgroup>
+                <optgroup label="Group 2">
+                    <option value="value2">Option 2.1</option>
+                    <option value="value3">Option 2.2</option>
+                </optgroup>
+                <optgroup label="Group 3" disabled>
+                    <option value="value4">Option 3.1</option>
+                    <option value="value5">Option 3.2</option>
+                    <option value="value6">Option 3.3</option>
+                </optgroup>
+            </select><br>
+            <button style="width: 80px;margin-left: 8px;background-color: black;color: white;" type="submit">SUBMIT</button>
+        </form>
+        
+    </body>
+</html>
